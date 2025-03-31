@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+
+        <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+        <!--=============== REMIX ICONS ===============-->
+
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!--=============== SWIPER CSS ===============-->
+
+        <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+        <!--=============== CSS ===============-->
+
+        <link rel="stylesheet" href="css/styles.css">
+
+        <title>Catalogo Finca RP</title>
+    </head>
+    <body>
+        <!--==================== Loader ====================-->
+
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    
+                    <button id="name1">
+                        <span style="font-weight: bold;">Catalogo de Donaciones Finca RP</span>
+                      </button>
+                      
+                    
+                </a>
+
+
+
+                        
+                    </ul>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
+
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </nav>
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home section" id="home">
+
+                <div class="shape shape__big"></div>
+                <div class="shape shape__small"></div>
+
+
+                <div id="video-background">
+                    <video autoplay muted loop id="video">
+                      <source src="videos/audi.mp4" type="video/mp4">
+                    </video>
+                    <div id="overlay-video"></div>
+                    <!-- Your content goes here -->
+                  </div>
+
+
+
+
+
+                <div class="home__container container grid">
+                    <div class="home__data">
+
+                        
+                        <h1 class="home__title">
+                            ¡PON EL MOTOR A FULL!
+                        </h1>
+
+                        <h2 class="home__subtitle">
+                            ¡ROMPE LOS LÍMITES Y DOMINA LA CALLE!
+                        </h2>
+                        
+                    </div>
+
+
+                    <div class="home__car">
+                        <div class="home__car-data">
+                            <div class="home__car-icon">
+                                <i class="ri-temp-cold-line"></i>   
+                            </div>
+                            <h2 class="home__car-number">24°
+                            </h2>
+                            <h3 class="home__car-name">TEMPERATURA
+                            </h3>
+                        </div>
+
+                        <div class="home__car-data">
+                            <div class="home__car-icon">
+                                <i class="ri-dashboard-3-line"></i>
+                            </div>
+                            <h2 class="home__car-number">873
+                            </h2>
+                            <h3 class="home__car-name">KILOMETROS
+                            </h3>
+                        </div>
+
+                        <div class="home__car-data">
+                            <div class="home__car-icon">
+                                <i class="ri-flashlight-fill"></i>
+                            </div>
+                            <h2 class="home__car-number">94%
+                            </h2>
+                            <h3 class="home__car-name">BATERIA
+                            </h3>
+                        </div>
+                       
+                    </div>
+
+                    
+
+                  <!-- <a href="#about" class="home__button"" onclick="audio.play()">START</a> -->
+                    
+                  <a href = "#about">
+                  <button class="mybutton noSelect" type ="button" onclick="audio.play()">
+                    
+                    <div class="mybuttoninner">
+                        <div class="mybuttoninner2">
+                            <ul>
+                                <li>ENCENDER</li>
+                                <div class="mybuttoninnerline2">
+                                    <div class="mybuttoninnerline"></div>
+                                </div>
+                                <li>APAGAR</li>
+                            </ul>
+                        </div>
+                    </div>
+                </button>
+            </a>
+                </div>
+            </section>
+
+            <!--==================== ABOUT ====================-->
+            <section class="about section" id="about">
+                <div class="about__container container grid">
+                    <div class="about__group">
+                        <img src="img/about.png" alt="" class="about__img">
+            
+                        <div class="about__card">
+                            <h3 class="about__card-title">¡Gracias a Ti!</h3>
+                            <p class="about__card-description">
+                                Miles de jugadores apoyando el servidor
+                            </p>
+                        </div>
+                    </div>
+            
+                    <div class="about__data">
+                        <h2 class="section__title about__title">
+                            ¡Tu Apoyo Hace la Diferencia! <br> Ayuda a Mejorar el Servidor
+                        </h2>
+            
+                        <p class="about__description">
+                            El servidor está en constante evolución, y gracias a las donaciones de nuestra 
+                            comunidad, podemos ofrecerte una experiencia única. Tu aporte ayuda a mantener el 
+                            servidor activo, agregar nuevas características y mejorar la calidad del juego para todos.
+
+                    </div>
+                </div>
+            </section>
+            
+
+
+            <!--==================== FEATURED ====================-->
+            <div class="featured__container container">
+                <ul class="featured__filters">
+                    <li>
+                        <button class="featured__item" data-filter="all">
+                            <span>All</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="featured__item" data-filter=".sedanes">
+                            <span>Sedanes</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="featured__item" data-filter=".suvs">
+                            <span>SUVs</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="featured__item" data-filter=".pickup">
+                            <span>Pick Up</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="featured__item" data-filter=".deportivo">
+                            <span>Deportivos</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="featured__item" data-filter=".super-deportivo">
+                            <span>Super Deportivos</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="featured__item" data-filter=".motos">
+                            <span>Motos</span>
+                        </button>
+                    </li>
+
+                </ul>
+            </div>
+            
+            <div class="featured__content grid">
+                <!-- Sedanes Category -->
+                <article class="featured__card mix sedanes">
+                    <h1 class="featured__title">Mercedes Benz</h1>
+                    <h3 class="featured__subtitle">Clase S500</h3>
+                    <img src="img/sedanes/S500.png" alt="" class="featured__img">  
+                    <h3 class="featured__price">$10 / ₡5000</h3>
+                    <button class="button featured__button" onclick="copyToClipboard('spawnCodeSedan1')">
+                        <i class="ri-clipboard-line"></i> Spawm
+                    </button>
+                    <textarea id="spawnCodeSedan1" style="position: absolute; left: -9999px;">zm_s500</textarea>
+                </article>
+
+                <article class="featured__card mix sedanes">
+                    <h1 class="featured__title">BMW</h1>
+                    <h3 class="featured__subtitle">M5 2003</h3>
+                    <img src="img/sedanes/M52003.png" alt="" class="featured__img">  
+                    <h3 class="featured__price">$10 / ₡5000</h3>
+                    <button class="button featured__button" onclick="copyToClipboard('spawnCodeSedan1')">
+                        <i class="ri-clipboard-line"></i> Spawm
+                    </button>
+                    <textarea id="spawnCodeSedan1" style="position: absolute; left: -9999px;">bmwe39</textarea>
+                </article>
+
+                <article class="featured__card mix sedanes">
+                    <h1 class="featured__title">AUDI</h1>
+                    <h3 class="featured__subtitle">A4</h3>
+                    <img src="sedanes/a4.png" alt="" class="featured__img">  
+                    <h3 class="featured__price">$10 / ₡5000</h3>
+                    <button class="button featured__button" onclick="copyToClipboard('spawnCodeSedan1')">
+                        <i class="ri-clipboard-line"></i> Spawm
+                    </button>
+                    <textarea id="spawnCodeSedan1" style="position: absolute; left: -9999px;">aaq4</textarea>
+                </article>
+
+                <article class="featured__card mix sedanes">
+                    <h1 class="featured__title">Mercedes Benz</h1>
+                    <h3 class="featured__subtitle">W222</h3>
+                    <img src="img/sedanes/W222.png" alt="" class="featured__img">  
+                    <h3 class="featured__price">$10 / ₡5000</h3>
+                    <button class="button featured__button" onclick="copyToClipboard('spawnCodeSedan1')">
+                        <i class="ri-clipboard-line"></i> Spawm
+                    </button>
+                    <textarea id="spawnCodeSedan1" style="position: absolute; left: -9999px;">waldw222</textarea>
+                </article>
+
+                <article class="featured__card mix sedanes">
+                    <h1 class="featured__title">Volkswagen</h1>
+                    <h3 class="featured__subtitle">Passat</h3>
+                    <img src="img/sedanes/passat.png" alt="" class="featured__img">  
+                    <h3 class="featured__price">$10 / ₡5000</h3>
+                    <button class="button featured__button" onclick="copyToClipboard('spawnCodeSedan1')">
+                        <i class="ri-clipboard-line"></i> Spawm
+                    </button>
+                    <textarea id="spawnCodeSedan1" style="position: absolute; left: -9999px;">passat</textarea>
+                </article>
+
+                <article class="featured__card mix sedanes">
+                    <h1 class="featured__title">Rolls-Royce</h1>
+                    <h3 class="featured__subtitle">Wrath</h3>
+                    <img src="img/sedanes/wraith.png" alt="" class="featured__img">  
+                    <h3 class="featured__price">$10 / ₡5000</h3>
+                    <button class="button featured__button" onclick="copyToClipboard('spawnCodeSedan1')">
+                        <i class="ri-clipboard-line"></i> Spawm
+                    </button>
+                    <textarea id="spawnCodeSedan1" style="position: absolute; left: -9999px;">rrwraith</textarea>
+                </article>
+
+                
+            
+                <!-- SUVs Category -->
+                <article class="featured__card mix suvs">
+                    <h1 class="featured__title">Ranger Rover</h1>
+                    <h3 class="featured__subtitle">Velar</h3>
+                    <img src="img/SUV/velar.png" alt="" class="featured__img">  
+                    <h3 class="featured__price">$10 / ₡5000</h3>
+                    <button class="button featured__button" onclick="copyToClipboard('spawnCodeSUV1')">
+                        <i class="ri-clipboard-line"></i> Spawm
+                    </button>
+                    <textarea id="spawnCodeSUV1" style="position: absolute; left: -9999px;">18velar</textarea>
+                </article>
+            
+                <article class="featured__card mix suvs">
+                    <h1 class="featured__title">Lamborghini</h1>
+                    <h3 class="featured__subtitle">Urus</h3>
+                    <img src="img/SUV/urus.png" alt="" class="featured__img">  
+                    <h3 class="featured__price">$10 / ₡5000</h3>
+                    <button class="button featured__button" onclick="copyToClipboard('spawnCodeSUV2')">
+                        <i class="ri-clipboard-line"></i> Spawm
+                    </button>
+                    <textarea id="spawnCodeSUV2" style="position: absolute; left: -9999px;">1016urus</textarea>
+                </article>
+
+                <article class="featured__card mix suvs">
+                    <h1 class="featured__title">BMW</h1>
+                    <h3 class="featured__subtitle">X7</h3>
+                    <img src="img/SUV/x7.png" alt="" class="featured__img">  
+                    <h3 class="featured__price">$10 / ₡5000</h3>
+                    <button class="button featured__button" onclick="copyToClipboard('spawnCodeSUV1')">
+                        <i class="ri-clipboard-line"></i> Spawm
+                    </button>
+                    <textarea id="spawnCodeSUV1" style="position: absolute; left: -9999px;">bmwg07</textarea>
+                </article>
+            
+                <article class="featured__card mix suvs">
+                    <h1 class="featured__title">Land Rover</h1>
+                    <h3 class="featured__subtitle">Defender</h3>
+                    <img src="img/SUV/defender.png" alt="" class="featured__img">  
+                    <h3 class="featured__price">$10 / ₡5000</h3>
+                    <button class="button featured__button" onclick="copyToClipboard('spawnCodeSUV2')">
+                        <i class="ri-clipboard-line"></i> Spawm
+                    </button>
+                    <textarea id="spawnCodeSUV2" style="position: absolute; left: -9999px;">oycdefender</textarea>
+                </article>
+
+                <article class="featured__card mix suvs">
+                    <h1 class="featured__title">Rolls-Royce</h1>
+                    <h3 class="featured__subtitle">cullinan</h3>
+                    <img src="img/SUV/cullinan.png" alt="" class="featured__img">  
+                    <h3 class="featured__price">$10 / ₡5000</h3>
+                    <button class="button featured__button" onclick="copyToClipboard('spawnCodeSUV1')">
+                        <i class="ri-clipboard-line"></i> Spawm
+                    </button>
+                    <textarea id="spawnCodeSUV1" style="position: absolute; left: -9999px;">kln</textarea>
+                </article>
+            
+                <article class="featured__card mix suvs">
+                    <h1 class="featured__title">Mercedes Benz</h1>
+                    <h3 class="featured__subtitle">Clase G63</h3>
+                    <img src="img/SUV/g63.png" alt="" class="featured__img">  
+                    <h3 class="featured__price">$10 / ₡5000</h3>
+                    <button class="button featured__button" onclick="copyToClipboard('spawnCodeSUV2')">
+                        <i class="ri-clipboard-line"></i> Spawm
+                    </button>
+                    <textarea id="spawnCodeSUV2" style="position: absolute; left: -9999px;">g63c</textarea>
+                </article>
+            
+                <!-- Pick Up Category -->
+                <article class="featured__card mix pickup">
+                    <h1 class="featured__title">Mercedes Benz</h1>
+                    <h3 class="featured__subtitle">G63 6X6</h3>
+                    <img src="img/PICK-UP/GLE6X6.png" alt="" class="featured__img">  
+                    <h3 class="featured__price">$10 / ₡5000</h3>
+                    <button class="button featured__button" onclick="copyToClipboard('spawnCodePickup1')">
+                        <i class="ri-clipboard-line"></i> Spawm
+                    </button>
+                    <textarea id="spawnCodePickup1" style="position: absolute; left: -9999px;">GODzRAMTRX6x6</textarea>
+                </article>
+            
+                <article class="featured__card mix pickup">
+                    <h1 class="featured__title">Volkswagen</h1>
+                    <h3 class="featured__subtitle">Amarok</h3>
+                    <img src="img/PICK-UP/amarok.png" alt="" class="featured__img">  
+                    <h3 class="featured__price">$10 / ₡5000</h3>
+                    <button class="button featured__button" onclick="copyToClipboard('spawnCodePickup2')">
+                        <i class="ri-clipboard-line"></i> Spawm
+                    </button>
+                    <textarea id="spawnCodePickup2" style="position: absolute; left: -9999px;">Amarok</textarea>
+                </article>
+
+                <article class="featured__card mix pickup">
+                    <h1 class="featured__title">GMC</h1>
+                    <h3 class="featured__subtitle">Sierra</h3>
+                    <img src="img/PICK-UP/sierra.png" alt="" class="featured__img">  
+                    <h3 class="featured__price">$10 / ₡5000</h3>
+                    <button class="button featured__button" onclick="copyToClipboard('spawnCodePickup2')">
+                        <i class="ri-clipboard-line"></i> Spawm
+                    </button>
+                    <textarea id="spawnCodePickup2" style="position: absolute; left: -9999px;">21sierra</textarea>
+                </article>
+
+                <article class="featured__card mix pickup">
+                    <h1 class="featured__title">Dodge</h1>
+                    <h3 class="featured__subtitle">RAM TRX</h3>
+                    <img src="img/PICK-UP/trx.png" alt="" class="featured__img">  
+                    <h3 class="featured__price">$10 / ₡5000</h3>
+                    <button class="button featured__button" onclick="copyToClipboard('spawnCodePickup1')">
+                        <i class="ri-clipboard-line"></i> Spawm
+                    </button>
+                    <textarea id="spawnCodePickup1" style="position: absolute; left: -9999px;">trx</textarea>
+                </article>
+            
+                <article class="featured__card mix pickup">
+                    <h1 class="featured__title">Dodge</h1>
+                    <h3 class="featured__subtitle">Ram TRX 6X6</h3>
+                    <img src="img/PICK-UP/trx6x6.png" alt="" class="featured__img">  
+                    <h3 class="featured__price">$10 / ₡5000</h3>
+                    <button class="button featured__button" onclick="copyToClipboard('spawnCodePickup2')">
+                        <i class="ri-clipboard-line"></i> Spawm
+                    </button>
+                    <textarea id="spawnCodePickup2" style="position: absolute; left: -9999px;">Amarok</textarea>
+                </article>
+
+                <article class="featured__card mix pickup">
+                    <h1 class="featured__title">Toyota</h1>
+                    <h3 class="featured__subtitle">Tundra</h3>
+                    <img src="img/PICK-UP/tundra.png" alt="" class="featured__img">  
+                    <h3 class="featured__price">$10 / ₡5000</h3>
+                    <button class="button featured__button" onclick="copyToClipboard('spawnCodePickup2')">
+                        <i class="ri-clipboard-line"></i> Spawm
+                    </button>
+                    <textarea id="spawnCodePickup2" style="position: absolute; left: -9999px;">21sierra</textarea>
+                </article>
+
+                
+            
+                <!-- Deportivo Category -->
+                <article class="featured__card mix deportivo">
+                    <h1 class="featured__title">Nissan</h1>
+                    <h3 class="featured__subtitle">Skyline GTR34</h3>
+                    <img src="img/deportivos/gtr34.png" alt="" class="featured__img">  
+                    <h3 class="featured__price">$10 / ₡5000</h3>
+                    <button class="button featured__button" onclick="copyToClipboard('spawnCodeDeportivo1')">
+                        <i class="ri-clipboard-line"></i> Spawm
+                    </button>
+                    <textarea id="spawnCodeDeportivo1" style="position: absolute; left: -9999px;"> 2f2fgtr34</textarea>
+                </article>
+            
+                <article class="featured__card mix deportivo">
+                    <h1 class="featured__title">Porshe</h1>
+                    <h3 class="featured__subtitle">911</h3>
+                    <img src="img/deportivos/911.png" alt="" class="featured__img">  
+                    <h3 class="featured__price">$10 / ₡5000</h3>
+                    <button class="button featured__button" onclick="copyToClipboard('spawnCodeDeportivo2')">
+                        <i class="ri-clipboard-line"></i> Spawm
+                    </button>
+                    <textarea id="spawnCodeDeportivo2" style="position: absolute; left: -9999px;">911gtrs</textarea>
+                </article>
+
+                <article class="featured__card mix deportivo">
+                    <h1 class="featured__title">Audi</h1>
+                    <h3 class="featured__subtitle">RS5</h3>
+                    <img src="img/deportivos/rs5.png" alt="" class="featured__img">  
+                    <h3 class="featured__price">$10 / ₡5000</h3>
+                    <button class="button featured__button" onclick="copyToClipboard('spawnCodeDeportivo1')">
+                        <i class="ri-clipboard-line"></i> Spawm
+                    </button>
+                    <textarea id="spawnCodeDeportivo1" style="position: absolute; left: -9999px;">rs5mans</textarea>
+                </article>
+            
+                <article class="featured__card mix deportivo">
+                    <h1 class="featured__title">Alfa Romeo</h1>
+                    <h3 class="featured__subtitle">Guilia</h3>
+                    <img src="img/deportivos/giulia.png" alt="" class="featured__img">  
+                    <h3 class="featured__price">$10 / ₡5000</h3>
+                    <button class="button featured__button" onclick="copyToClipboard('spawnCodeDeportivo2')">
+                        <i class="ri-clipboard-line"></i> Spawm
+                    </button>
+                    <textarea id="spawnCodeDeportivo2" style="position: absolute; left: -9999px;">giulia_2021</textarea>
+                </article>
+
+                <article class="featured__card mix deportivo">
+                    <h1 class="featured__title">Nissan</h1>
+                    <h3 class="featured__subtitle">GT-R</h3>
+                    <img src="img/deportivos/gt-r.png" alt="" class="featured__img">  
+                    <h3 class="featured__price">$10 / ₡5000</h3>
+                    <button class="button featured__button" onclick="copyToClipboard('spawnCodeDeportivo1')">
+                        <i class="ri-clipboard-line"></i> Spawm
+                    </button>
+                    <textarea id="spawnCodeDeportivo1" style="position: absolute; left: -9999px;">nismo20</textarea>
+                </article>
+            
+                <article class="featured__card mix deportivo">
+                    <h1 class="featured__title">Ford</h1>
+                    <h3 class="featured__subtitle">Mustang</h3>
+                    <img src="img/deportivos/mustang.png" alt="" class="featured__img">  
+                    <h3 class="featured__price">$10 / ₡5000</h3>
+                    <button class="button featured__button" onclick="copyToClipboard('spawnCodeDeportivo2')">
+                        <i class="ri-clipboard-line"></i> Spawm
+                    </button>
+                    <textarea id="spawnCodeDeportivo2" style="position: absolute; left: -9999px;">rmodmustang</textarea>
+                </article>
+            
+                <!-- Super Deportivo Category -->
+                <article class="featured__card mix super-deportivo">
+                    <h1 class="featured__title">Lamborghini</h1>
+                    <h3 class="featured__subtitle">Huracan</h3>
+                    <img src="img/super_deportivos/huracan.png" alt="" class="featured__img">  
+                    <h3 class="featured__price">$15 / ₡7500</h3>
+                    <button class="button featured__button" onclick="copyToClipboard('spawnCodeSuperDeportivo1')">
+                        <i class="ri-clipboard-line"></i> Spawm
+                    </button>
+                    <textarea id="spawnCodeSuperDeportivo1" style="position: absolute; left: -9999px;">18performante</textarea>
+                </article>
+            
+                <article class="featured__card mix super-deportivo">
+                    <h1 class="featured__title">Lamborghini</h1>
+                    <h3 class="featured__subtitle">Huracan Evo</h3>
+                    <img src="img/super_deportivos/hevo.png" alt="" class="featured__img">  
+                    <h3 class="featured__price">$15 / ₡7500</h3>
+                    <button class="button featured__button" onclick="copyToClipboard('spawnCodeSuperDeportivo2')">
+                        <i class="ri-clipboard-line"></i> Spawm
+                    </button>
+                    <textarea id="spawnCodeSuperDeportivo2" style="position: absolute; left: -9999px;">TTSTO</textarea>
+                </article>
+
+                <article class="featured__card mix super-deportivo">
+                    <h1 class="featured__title">Ferrari</h1>
+                    <h3 class="featured__subtitle">812 Super</h3>
+                    <img src="img/super_deportivos/812.png" alt="" class="featured__img">  
+                    <h3 class="featured__price">$15 / ₡7500</h3>
+                    <button class="button featured__button" onclick="copyToClipboard('spawnCodeSuperDeportivo1')">
+                        <i class="ri-clipboard-line"></i> Spawm
+                    </button>
+                    <textarea id="spawnCodeSuperDeportivo1" style="position: absolute; left: -9999px;">ferrari812super</textarea>
+                </article>
+            
+                <article class="featured__card mix super-deportivo">
+                    <h1 class="featured__title">McLaren</h1>
+                    <h3 class="featured__subtitle">600 LT</h3>
+                    <img src="img/super_deportivos/600lt.png" alt="" class="featured__img">  
+                    <h3 class="featured__price">$15 / ₡7500</h3>
+                    <button class="button featured__button" onclick="copyToClipboard('spawnCodeSuperDeportivo2')">
+                        <i class="ri-clipboard-line"></i> Spawm
+                    </button>
+                    <textarea id="spawnCodeSuperDeportivo2" style="position: absolute; left: -9999px;">600ltwb</textarea>
+                </article>
+
+                <article class="featured__card mix super-deportivo">
+                    <h1 class="featured__title">Bugatti</h1>
+                    <h3 class="featured__subtitle">chiron</h3>
+                    <img src="img/super_deportivos/chiron.png" alt="" class="featured__img">  
+                    <h3 class="featured__price">$15 / ₡7500</h3>
+                    <button class="button featured__button" onclick="copyToClipboard('spawnCodeSuperDeportivo1')">
+                        <i class="ri-clipboard-line"></i> Spawm
+                    </button>
+                    <textarea id="spawnCodeSuperDeportivo1" style="position: absolute; left: -9999px;">chironspeedhunter</textarea>
+                </article>
+            
+                <article class="featured__card mix super-deportivo">
+                    <h1 class="featured__title">Mercedes Benz</h1>
+                    <h3 class="featured__subtitle">AMG One</h3>
+                    <img src="img/super_deportivos/amgone.png" alt="" class="featured__img">  
+                    <h3 class="featured__price">$15 / ₡7500</h3>
+                    <button class="button featured__button" onclick="copyToClipboard('spawnCodeSuperDeportivo2')">
+                        <i class="ri-clipboard-line"></i> Spawm
+                    </button>
+                    <textarea id="spawnCodeSuperDeportivo2" style="position: absolute; left: -9999px;">amgone</textarea>
+                </article>
+            
+                <!-- Motos Category -->
+                <article class="featured__card mix motos">
+                    <h1 class="featured__title">BMW</h1>
+                    <h3 class="featured__subtitle">M 1000rr</h3>
+                    <img src="img/MOTOS/M1000RR.png" alt="" class="featured__img">  
+                    <h3 class="featured__price">$5 / ₡2500</h3>
+                    <button class="button featured__button" onclick="copyToClipboard('spawnCodeMoto1')">
+                        <i class="ri-clipboard-line"></i> Spawm
+                    </button>
+                    <textarea id="spawnCodeMoto1" style="position: absolute; left: -9999px;">km1000rr</textarea>
+                </article>
+            
+                <article class="featured__card mix motos">
+                    <h1 class="featured__title">Kawasaki</h1>
+                    <h3 class="featured__subtitle">Ninja H2</h3>
+                    <img src="img/MOTOS/ninjs.png" alt="" class="featured__img">  
+                    <h3 class="featured__price">$5 / ₡2500</h3>
+                    <button class="button featured__button" onclick="copyToClipboard('spawnCodeMoto2')">
+                        <i class="ri-clipboard-line"></i> Spawm
+                    </button>
+                    <textarea id="spawnCodeMoto2" style="position: absolute; left: -9999px;">ninjah2</textarea>
+                </article>
+
+                <article class="featured__card mix motos">
+                    <h1 class="featured__title">Yamaha</h1>
+                    <h3 class="featured__subtitle">AeroX</h3>
+                    <img src="img/motos/aerox.png" alt="" class="featured__img">  
+                    <h3 class="featured__price">$5 / ₡2500</h3>
+                    <button class="button featured__button" onclick="copyToClipboard('spawnCodeMoto1')">
+                        <i class="ri-clipboard-line"></i> Spawm
+                    </button>
+                    <textarea id="spawnCodeMoto1" style="position: absolute; left: -9999px;">aerox155</textarea>
+                </article>
+            
+                <article class="featured__card mix motos">
+                    <h1 class="featured__title">Yamaha</h1>
+                    <h3 class="featured__subtitle">YZF-R7</h3>
+                    <img src="img/MOTOS/yzf.png" alt="" class="featured__img">  
+                    <h3 class="featured__price">$5 / ₡2500</h3>
+                    <button class="button featured__button" onclick="copyToClipboard('spawnCodeMoto2')">
+                        <i class="ri-clipboard-line"></i> Spawm
+                    </button>
+                    <textarea id="spawnCodeMoto2" style="position: absolute; left: -9999px;">yzfr7</textarea>
+                </article>
+
+                <article class="featured__card mix motos">
+                    <h1 class="featured__title">Harley Davidson</h1>
+                    <h3 class="featured__subtitle">Fat Boy</h3>
+                    <img src="img/MOTOS/fat.png" alt="" class="featured__img">  
+                    <h3 class="featured__price">$5 / ₡2500</h3>
+                    <button class="button featured__button" onclick="copyToClipboard('spawnCodeMoto1')">
+                        <i class="ri-clipboard-line"></i> Spawm
+                    </button>
+                    <textarea id="spawnCodeMoto1" style="position: absolute; left: -9999px;">claw</textarea>
+                </article>
+            
+                <article class="featured__card mix motos">
+                    <h1 class="featured__title">Honda</h1>
+                    <h3 class="featured__subtitle">CBR650R</h3>
+                    <img src="img/MOTOS/cbr650r.png" alt="" class="featured__img">  
+                    <h3 class="featured__price">$5 / ₡2500</h3>
+                    <button class="button featured__button" onclick="copyToClipboard('spawnCodeMoto6')">
+                        <i class="ri-clipboard-line"></i> Spawm
+                    </button>
+                    <textarea id="spawnCodeMoto6" style="position: absolute; left: -9999px;">cb650r</textarea>
+                </article>
+            
+                <!-- Eléctricos Category -->
+                <article class="featured__card mix electricos">
+                    <h1 class="featured__title">Eléctrico 1</h1>
+                    <h3 class="featured__subtitle">Tesla Model 3</h3>
+                    <img src="img/eletrico1.png" alt="" class="featured__img">  
+                    <h3 class="featured__price">$40,000</h3>
+                    <button class="button featured__button" onclick="copyToClipboard('spawnCodeElectrico1')">
+                        <i class="ri-clipboard-line"></i> Spawm
+                    </button>
+                    <textarea id="spawnCodeElectrico1" style="position: absolute; left: -9999px;">spawn_car('Eléctrico 1', 'Tesla Model 3', 'img/eletrico1.png', 40000);</textarea>
+                </article>
+            
+                <article class="featured__card mix electricos">
+                    <h1 class="featured__title">Eléctrico 2</h1>
+                    <h3 class="featured__subtitle">Tesla Model X</h3>
+                    <img src="img/eletrico2.png" alt="" class="featured__img">  
+                    <h3 class="featured__price">$60,000</h3>
+                    <button class="button featured__button" onclick="copyToClipboard('spawnCodeElectrico2')">
+                        <i class="ri-clipboard-line"></i> Spawm
+                    </button>
+                    <textarea id="spawnCodeElectrico2" style="position: absolute; left: -9999px;">spawn_car('Eléctrico 2', 'Tesla Model X', 'img/eletrico2.png', 60000);</textarea>
+                </article>
+
+                <article class="featured__card mix electricos">
+                    <h1 class="featured__title">Eléctrico 1</h1>
+                    <h3 class="featured__subtitle">Tesla Model 3</h3>
+                    <img src="img/eletrico1.png" alt="" class="featured__img">  
+                    <h3 class="featured__price">$40,000</h3>
+                    <button class="button featured__button" onclick="copyToClipboard('spawnCodeElectrico1')">
+                        <i class="ri-clipboard-line"></i> Spawm
+                    </button>
+                    <textarea id="spawnCodeElectrico1" style="position: absolute; left: -9999px;">spawn_car('Eléctrico 1', 'Tesla Model 3', 'img/eletrico1.png', 40000);</textarea>
+                </article>
+            
+                <article class="featured__card mix electricos">
+                    <h1 class="featured__title">Eléctrico 2</h1>
+                    <h3 class="featured__subtitle">Tesla Model X</h3>
+                    <img src="img/eletrico2.png" alt="" class="featured__img">  
+                    <h3 class="featured__price">$60,000</h3>
+                    <button class="button featured__button" onclick="copyToClipboard('spawnCodeElectrico2')">
+                        <i class="ri-clipboard-line"></i> Spawm
+                    </button>
+                    <textarea id="spawnCodeElectrico2" style="position: absolute; left: -9999px;">spawn_car('Eléctrico 2', 'Tesla Model X', 'img/eletrico2.png', 60000);</textarea>
+                </article>
+
+                <article class="featured__card mix electricos">
+                    <h1 class="featured__title">Eléctrico 1</h1>
+                    <h3 class="featured__subtitle">Tesla Model 3</h3>
+                    <img src="img/eletrico1.png" alt="" class="featured__img">  
+                    <h3 class="featured__price">$40,000</h3>
+                    <button class="button featured__button" onclick="copyToClipboard('spawnCodeElectrico1')">
+                        <i class="ri-clipboard-line"></i> Spawm
+                    </button>
+                    <textarea id="spawnCodeElectrico1" style="position: absolute; left: -9999px;">spawn_car('Eléctrico 1', 'Tesla Model 3', 'img/eletrico1.png', 40000);</textarea>
+                </article>
+            
+                <article class="featured__card mix electricos">
+                    <h1 class="featured__title">Eléctrico 2</h1>
+                    <h3 class="featured__subtitle">Tesla Model X</h3>
+                    <img src="img/eletrico2.png" alt="" class="featured__img">  
+                    <h3 class="featured__price">$60,000</h3>
+                    <button class="button featured__button" onclick="copyToClipboard('spawnCodeElectrico2')">
+                        <i class="ri-clipboard-line"></i> Spawm
+                    </button>
+                    <textarea id="spawnCodeElectrico2" style="position: absolute; left: -9999px;">spawn_car('Eléctrico 2', 'Tesla Model X', 'img/eletrico2.png', 60000);</textarea>
+                </article>
+            </div>
+
+
+            <script>
+                function copyToClipboard(id) {
+                    var copyText = document.getElementById(id);
+                    copyText.select();
+                    copyText.setSelectionRange(0, 99999); // For mobile devices
+            
+                    document.execCommand("copy");
+            
+                    alert("Código copiado: " + copyText.value);
+                }
+            </script>
+            
+
+            <!--==================== OFFER ====================-->
+            <section class="offer section">
+                <div class="offer__container container grid">
+                    <img src="img/offer-bg.png" alt="" class="offer__bg">
+
+                    <div class="offer__data">
+                        <h2 class="section__title offer__title">
+                            ¿Te gustaría apoyar nuestro servidor? <br> ¡Tus donaciones hacen la diferencia!
+                        </h2>
+
+
+                        <p class="offer__description">
+                            CADA DONACIÓN ES PARA MANTENER EL SERVIDOR BELLO Y CON LOS MEJORES SCRIPTS.
+
+                        </p>
+
+
+
+                        <div class="group" style = "display: none;">
+                            <input required="" type="text" class="input">
+                            <span class="bar"></span>
+
+                          </div>
+                    </div>
+
+                    <img src="img/offer.png" alt="" class="offer__img">
+                </div>
+            </section>
+
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="shape shape__big"></div>
+            <div class="shape shape__small"></div>
+
+            <div class="footer__container container grid">
+                <div class="footer__content">
+                    <a href="#" class="footer__logo">
+                        <i class="ri-steering-line"></i>Catalogo de donaciones de Finca RP
+                    </a>
+
+
+                    <ul class="footer__links">
+
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">
+                        Síguenos
+                    </h3>
+                <ul class="footer__social">
+                    </a>
+                    <a href="https://www.instagram.com/fincagamingg/?hl=es
+                    /" target = "_blank" class="footer__social-link">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+
+                    </a>
+                </ul>
+                   
+                </div>
+            </div>
+
+        </footer>
+
+
+
+        <!--by Kush-->
+
+
+        <!--========== SCROLL UP ==========-->
+
+
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-line"></i>
+        </a>
+
+        <!--========== SCROLL DOWN ==========-->
+
+        <a href="#footerid" class="scrolldown" id="scroll-down">
+            <i class="ri-arrow-down-line"></i>
+        </a>
+        
+
+        <!--=============== SCROLL REVEAL ===============-->
+        <script src="js/scrollreveal.min.js"></script>
+
+        <!--=============== SWIPER JS ===============-->
+        <script src="js/swiper-bundle.min.js"></script>
+
+        <!--=============== MIXITUP JS ===============-->
+        <script src="js/mixitup.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="js/main.js"></script>
+
+
+
+
+
+
+
+    </body>
+</html>
